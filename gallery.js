@@ -1,5 +1,5 @@
 const stateDesc = [
-  {
+   {
     stateImage:
       'https://images.unsplash.com/photo-1597735881932-d9664c9bbcea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2VyYWxhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
     stateName: 'Kerala',
@@ -8,7 +8,7 @@ const stateDesc = [
     stateInfo: 'https://en.wikipedia.org/wiki/Kerala',
   },
 
-  {
+  { 
     stateImage:
       'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGFtaWxuYWR1fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
     stateName: 'Tamilnadu',
@@ -18,9 +18,9 @@ const stateDesc = [
   },
   {
     stateImage:
-      'https://blog.thomascook.in/wp-content/uploads/2017/09/Untitled-design-20-min.jpg',
-    stateName: 'Karnataka',
-    stateDescription:
+       'https://blog.thomascook.in/wp-content/uploads/2017/09/Untitled-design-20-min.jpg',
+     stateName: 'Karnataka',
+     stateDescription:
       'Karnataka is primarily known for its Heritage destinations and its Wildlife/ National Parks. Apart from that, it is also famous for its magical hill stations, spectacular waterfalls, pilgrimage centres and a 320km long coastline dotted with un-spoilt beaches.',
     stateInfo: 'https://en.wikipedia.org/wiki/Karnataka',
   },
@@ -33,7 +33,7 @@ const stateDesc = [
     stateInfo: 'https://en.wikipedia.org/wiki/Goa',
   },
   {
-    stateImage:
+     stateImage:
       'https://www.india-tours.ca/images/states-images/maharashtra.jpg',
     stateName: 'Maharashtra',
     stateDescription:
@@ -59,7 +59,7 @@ const stateDesc = [
   {
     stateImage:
       'https://images.unsplash.com/photo-1524230507669-5ff97982bb5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTB8MTAyNTI3MzR8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
-    stateName: 'Rajashtan',
+     stateName: 'Rajashtan',
     stateDescription:
       "Rajasthan is famous for its forts, intricately carved temples, and decorated 'havelis', which were built by 'Rajput' kings. Rajasthan attracts about 14 percent of total foreign visitors",
     stateInfo: 'https://en.wikipedia.org/wiki/Rajashtan',
