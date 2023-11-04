@@ -4,6 +4,7 @@ function showInfo() {
     let stateHeader = document.getElementById('StateName');
     let mapSrc = "";
 
+    
     if (stateName === "AndhraPradesh") {
         stateHeader.innerHTML = "Andhra Pradesh";
         stateInfo.innerHTML = "Capital: Amaravati<br>Popular Destinations: Visakhapatnam, Tirupati, Hyderabad<br>Highlights: Rich cultural heritage, beautiful beaches, and historic temples.<br>";
