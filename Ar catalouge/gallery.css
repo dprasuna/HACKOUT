@@ -3,7 +3,8 @@
     margin: 0;
     box-sizing: border-box;
   }
-  
+
+
   body {
     overflow-x: hidden;
     /* background-image: url('images/gallery_background.jpg'); */
