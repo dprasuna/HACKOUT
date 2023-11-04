@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+}
+.header nav{
+    width: 20vw;
+    display: flex;
+}
+.header nav ul{
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header nav ul li{
+    list-style: none;
+    font-family: 'Hubballi', cursive;
+    font-size: larger;
+}
+.header h1{
+    padding-top: 18px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.header h1 img{
+    border-radius: 60px;
+    width: 5vw;
+    margin-right: 30px;
+    height: 10vh;
+}
+.header .action{
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header .action button{
+    width: 8vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: .2px solid grey;
+    cursor: pointer;
+    background-color: transparent;
+}
+.header .action button:hover{
+    transition: .6s;
+    background-color:#ff8100;
+    color: white;
+}
+.hero{
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(hero.jpg);
+}
+.hero h2{
+    width: 40vw;
+    margin-top: 15vh;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.hero button{
+    width: 10vw;
+    height: 6vh;
+    margin-top: 30px;
+    border-radius: 80px;
+    border: 0.3px solid grey;
+    background-color: transparent;
+    cursor: pointer;
+}
+.hero button:hover{
+    background-color: #ff8100;
+    color: white;
+    transition: .3s;
+}
+.main{
+    margin-top: 40px;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.main .left{
+    width: 30vw;
+    height: 60vh;
+}
+.main .left img{
+    height: 54vh;
+}
+.main .right{
+    margin-top: 4vh;
+    width: 60vw;
+    height: 60vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.main .right h2,h1{
+    padding-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.main .right h3{
+    width: 50vw;
+}
+.main .right p{
+    margin: 10px;
+    width: 30vw;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+}
+.detail{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(hero-3.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.detail h3{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    background-color: rgba(27, 27, 27, 0.459);
+    color: white;
+}
+.info{
+    margin-top: 40px;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.info h3,p{
+    width: 60vw;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+.glimpses{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.glimpses .g1{
+    border: .8px #ff8100 solid;
+    border-radius: 10px;
+    width: 30vw;
+    height: 80vh;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+}
+.glimpses .g1 img{
+    width: 30vw;
+    height: 75vh;
+    border-top-right-radius:10px;
+    border-top-left-radius:10px;
+}
+.products{
+    width: 100vw;
+    height: 150vh;
+    margin-top: 20vh;
+}
+.products h1{
+    width: 100vw;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+.products .row{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.products .row .cat{
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    height: 30vh;
+    border:.4px solid grey;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+}
+.products .row .cat h3{
+    width: 20vw;
+    text-align: center;
+}
+.products .row .cat img{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    width: 20vw;
+    height: 30vh;
+}
+.footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+}
+.footer .social{
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer .social img{
+    width: 3vw;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+#insta:hover{
+    background-color: #E4405F;
+    transition: .4s;
+}
+#linked:hover{
+    background-color: #0A66C2;
+    transition: .4s;
+}
+#facebook:hover{
+    background-color: #1877F2;
+    transition: .4s;
+}
+@media (max-width:992px){
+    .header{
+        flex-direction: column-reverse;
+        margin-top: 15vh;
+        height: 40vh;
+        font-size: larger;
+    }
+    .header nav{
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+    .header nav ul{
+        width: 100vw;
+    }
+    .header nav ul li{
+        margin: 20px;
+        font-size: larger;
+    }
+    .header h1 img{
+        width:15vh;
+        height: 15vh;
+    }
+    .header .action{
+        margin-top: 30px;
+        width: 100vw;
+    }
+    .header .action button{
+        width: 30vw;
+    }
+    .hero button{
+        width:30vw;
+        height: 6vh;
+        margin-top: 30px;
+        border-radius: 80px;
+        border: 0.3px solid grey;
+        background-color: #ff8100;
+        color: white;
+        cursor: pointer;
+    }
+    .main{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .main .left{
+        width: 100vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .main .left img{
+        width: 100vw;
+    }
+    .main .right {
+        width: 100vw;
+        background-color: white;
+    }
+    .main .right p{
+        width:80vw;
+        text-align: center;
+        font-size: larger;
+    }
+    .main .right h2,h1,h3{
+        padding-bottom: 20px;
+        width: 85vw;
+    }
+    .glimpses {
+        height: 250vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .glimpses .g1{
+        width: 80vw;
+    }
+    .glimpses .g1 img{
+        width: 80vw;
+    }
+}
+@media (max-width:735px){
+    .info img{
+        width: 70vw;
+    }
+    .products{
+        height: 350vh;
+    }
+    .products .row {
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+    }
+    .products .row .cat{
+        width: 80vw;
+    }
+    .products .row .cat img{
+        width: 40vw;
+    }
+}
+@media (max-height:380px){
+    .header{
+        height: 50vh;
+    }
+    .detail{
+        height: 150vh;
+    }
+}
+@media (max-height:420px){
+    .info{
+        height:200vh;
+    }
+    .glimpses{
+        height: 270vh;
+    }
+    .glimpses .g1{
+        height: 90vh;
+        margin-top: 30px;
+    }
+    .products{
+        height: 300vh;
+    }
+}
+@media (max-width:1000px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer h3{
+        width: 100vw;
+        text-align: center;
+    }
+    .footer .social {
+        width: 100vw;
+    }
+    .footer .social img{
+        width: 10vw;
+        background-color: transparent;
+    }
+}

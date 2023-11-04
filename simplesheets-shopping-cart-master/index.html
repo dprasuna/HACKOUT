@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Shopping Cart</title>
+  <link rel='stylesheet' href="//fonts.googleapis.com/css?family=Duru+Sans|Istok+Web">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="site-container">
+
+    <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+      <div class="wrap">
+
+        <div class="title-area">
+          <h1 class="site-title" itemprop="headline"><a href="/"><sup>BHARAT - HERITAGE</sup> </a></h1>
+        </div>
+
+        <div class="simplecart_area">
+          <div class="simplecart_cart">
+            <span class="showCart">
+              <span class="fa fa-shopping-cart"></span>
+              <span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+              <span class="dropdown fa fa-chevron-circle-down"></span>
+            </span>
+            <button class="simpleCart_checkout">Checkout</button>
+            <div id="cartPopover" style="display:none">
+              <div class="simpleCart_items"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <br><br><br><br><br><br><br><br>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="box-area">
+      
+      <div class="box">
+        <img
+          src="https://images.news18.com/ibnlive/uploads/2021/03/1615457169_rtr1wny2.jpg?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal"
+          alt="img">
+        <i class="fa-solid fa-snowflake"></i>
+        <h2>Odisha Culture</h2>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://images.pexels.com/photos/3723034/pexels-photo-3723034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="img">
+        <i class="fa-solid fa-tree"></i>
+        <h2>Odisha Culture</h2>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://odishatourism.gov.in/content/dam/tourism/home/discover/about-odisha/cultural-heritage/gallery_musicdance.jpg"
+          alt="img">
+        <i class="fa-solid fa-droplet"></i>
+        <h2>Odisha Culture</h2>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="box active">
+        <img
+          src="https://curlytales.com/wp-content/uploads/2023/07/odisha.jpg"
+          alt="img">
+        <i class="fa-solid fa-person-walking"></i>
+        <h2>Odisha Culture</h2>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://images.news18.com/ibnlive/uploads/2021/03/1615457169_rtr1wny2.jpg?im=Resize,width=360,aspect=fit,type=normal?im=Resize,width=320,aspect=fit,type=normal"
+          alt="img">
+        <i class="fa-solid fa-snowflake"></i>
+        <h2>Odisha Culture</h2>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://images.pexels.com/photos/3723034/pexels-photo-3723034.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="img">
+        <i class="fa-solid fa-tree"></i>
+        <h2>Odisha Culture</h2>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+      <div class="box">
+        <img
+          src="https://odishatourism.gov.in/content/dam/tourism/home/discover/about-odisha/cultural-heritage/gallery_musicdance.jpg"
+          alt="img">
+        <i class="fa-solid fa-droplet"></i>
+        <h2>Odisha Culture</h2>
+        <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="script.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .signature {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      .signature a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        color: #0cb9d8;
+        text-decoration: none;
+      }
+
+      .box-area {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        width: 70px;
+        height: 400px;
+        margin-right: 20px;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+        transition: all linear 0.6s;
+      }
+
+      .box:last-child {
+        margin-right: 0;
+      }
+
+      .box::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+      }
+
+      .box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .box i {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        background: #fff;
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        font-size: 20px;
+      }
+
+      .box:nth-child(1) i {
+        color: #ff5200;
+      }
+
+      .box:nth-child(2) i {
+        color: #ca470a;
+      }
+
+      .box:nth-child(3) i {
+        color: #00d9ff;
+      }
+
+      .box:nth-child(4) i {
+        color: #0077ff;
+      }
+
+      .box h2 {
+        position: absolute;
+        bottom: 30px;
+        left: 60px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 25px;
+        color: #f6f6f6;
+        font-weight: 600;
+        opacity: 0;
+        transition: all linear 0.3s;
+      }
+
+      .box p {
+        position: absolute;
+        bottom: 10px;
+        left: 60px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #f6f6f6;
+        opacity: 0;
+        transition: all linear 0.3s;
+      }
+
+      .box.active h2 {
+        opacity: 1;
+      }
+
+      .box.active p {
+        opacity: 1;
+      }
+
+      .active {
+        width: 500px;
+        transition: all linear 0.6s;
+      }
+    </style>
+
+    <script>
+      $(".box").click(function () {
+        $(".box").removeClass("active");
+        $(this).addClass("active");
+      });
+
+    </script>
+
+    <div class="site-inner">
+      <div class="wrap">
+
+        <div id="products" class="products">
+
+          <script id="hr-template" type="text/x-handlebars-template">
+            <div class="column one-third">
+              <div class="simpleCart_shelfItem item">
+                <div class="item_image"><img src="{{cells.Image}}"></div>
+                <h2 class="item_name">{{cells.Name}}</h2>
+                <div class="item_description">{{cells.Description}}</div>
+                <div style="margin-top:10px;">
+                  <span class="item_price">${{cells.Price}}</span>
+                  <button href="javascript:;" class="item_add">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </script>
+
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>Copyright &copy; 2023 by Team FIBONAKI</a></p>
+    </footer>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/simpleCart.min.js"></script>
+    <script src="js/handlebars.min.js"></script>
+    <script src="js/sheetrock.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </div>
+
+</body>
+
+</html>

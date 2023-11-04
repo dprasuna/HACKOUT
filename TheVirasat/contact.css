@@ -1,0 +1,16 @@
+.hero {
+    background-image: url(contact-hero.jpg);
+    color: white;
+    background-size: cover;
+}
+form button{
+    background-color:#ff8100;
+}
+form button:hover{
+    background-color: #ff8100;
+    background-color: white;
+    color: #ff8100;
+    border: .3px #ff8100 solid;
+    transition:.4s;
+    animation: alternate-reverse .3s ease-in-out;
+}

@@ -1,0 +1,137 @@
+.dealer{
+    width: 100vw;
+    height:max-content;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero{
+    background-image: url(carpet.png);
+    color: white;
+    background-size: cover;
+}
+.hero button{
+    color: white;
+}
+.dealer .d1{
+    margin-top: 40px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    border: .3px grey solid;
+    border-radius: 10px;
+}
+.dealer .d1 .left{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.dealer .d1 .left .up{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 20vh;
+}
+.dealer .d1 .left .up .dimg{
+    width: 12vw;
+    height: 20vh;
+}
+.dealer .d1 .left .up .dimg img{
+    border-top-left-radius:10px ;
+    width: 12vw;
+    height: 20vh;
+}
+.dealer .d1 .left .up .ddet{
+    width: 30vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dealer .d1 .left .up .ddet button{
+    cursor: pointer;
+    width: 10vw;
+    margin-left: 30px;
+    height: 5vh;
+    border-radius: 20px;
+}
+.dealer .d1 .left .up .ddet h3{
+    width: 20vw;
+    margin: 20px;
+}
+
+.dealer .d1 .left .down{
+    width: 50vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(194, 194, 194);
+}
+.dealer .d1 .left .down img{
+    width: 12vw;
+    height: 30vh;
+}
+
+.dealer .d1 .right{
+    width: 50vw;
+    height: 50vh;
+}
+.dealer .d1 .right iframe{
+    border:0; 
+    height: 50vh; 
+    width: 30vw;
+}
+@media (max-width:600px){
+    .dealer{
+        height: max-content;
+    }
+    .dealer .d1{
+        margin-top: 40px;
+        width: 80vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .dealer .d1 .left,.right{
+        width: 80vw;
+    }
+    .dealer .d1 .right{
+        width: 80vw;
+        height: 50vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .dealer .d1 .right iframe{
+        width: 80vw;
+    }
+    .dealer .d1 .left{
+        width: 80vw;
+        height: 50vh;
+    }
+    .dealer .d1 .left .up{
+        width: 80vw;
+        align-items: center;
+    }
+    .dealer .d1 .left .up h3{
+        width: 80vw;
+        padding: 0px;
+    }
+    .dealer .d1 .left .up .ddet{
+        width: 80vw;
+    }
+    .dealer .d1 .left .up .ddet button{
+        width: 15vw;
+    }
+    .dealer .d1 .left .down{
+        width: 80vw;
+    }
+    .dealer .d1 .left .down img{
+        width: 18vw;
+    }
+}

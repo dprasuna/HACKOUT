@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Tourism</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="shortcut icon" href="ashoka-chakra.png" type="image/png">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Welcome to India Tourism</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Explore the Beauty of India</h2>
+            <p>Plan your next adventure in one of India's stunning states.</p>
+        </section>
+
+        <section class="dropdown-section">
+            <div class="select-button-container">
+                <h3>Select a State:</h3>
+                <select id="stateDropdown" class="searchable-dropdown">
+                    <option value="">Choose a State</option>
+                    <option value="AndhraPradesh">Andhra Pradesh</option>
+                    <option value="ArunachalPradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="HimachalPradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="JammuKashmir">Jammu and Kashmir</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="MadhyaPradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="TamilNadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="UttarPradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="WestBengal">West Bengal</option>
+                </select>
+            </div>
+            <button id="exploreButton" onclick="showInfo()">Explore</button>
+        </section>
+    </main>
+    <div class="StateGuide" hidden>
+        <h3 id="StateName">Select from the dropdown above to learn about each state.</h3>
+        <p id="StateInfo"></p>
+        <br>
+        <br>
+        <div class="Map">
+            <iframe id="MapPlace"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15283599.358027074!2d72.10082996269149!3d20.73670481863216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1695908969980!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="videography">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/35npVaFGHMY?si=BTFVlR8G5ACBHX1n&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="tourism">
+        <section class="tourism-division">
+            <img src="1.png" alt="Tourism Division 1">
+            <h3>Explore Historical Wonders</h3>
+            <p>Discover the rich history and heritage of Rajasthan. Visit ancient temples, forts, and monuments in cities like Jaipur, Udaipur, and Jaisalmer that narrate stories of the past.</p>
+        </section>
+
+        <section class="tourism-division">
+            <img src="4.png" alt="Tourism Division 2">
+            <h3>Experience Natural Beauty</h3>
+            <p>Explore the breathtaking landscapes and natural wonders of Himachal Pradesh. Immerse yourself in lush forests, serene lakes, and pristine mountains in destinations like Manali, Shimla, and Dharamshala.</p>
+        </section>
+
+        <section class="tourism-division">
+            <img src="3.png" alt="Tourism Division 3">
+            <h3>Taste Culinary Delights</h3>
+            <p>Indulge in the diverse culinary traditions of West Bengal. Savor delicious local dishes and street food in Kolkata, Darjeeling, and Sundarbans that will tantalize your taste buds.</p>
+        </section>
+
+        <section class="tourism-division">
+            <img src="2.png" alt="Tourism Division 4">
+            <h3>Adventure and Wildlife</h3>
+            <p>Embark on thrilling adventures and wildlife safaris in Madhya Pradesh. Encounter exotic animals and explore the great outdoors in places like Kanha National Park, Bandhavgarh National Park, and Pench Tiger Reserve.</p>
+        </section>
+    </div>
+
+    <section class="contact-us">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need assistance, feel free to get in touch with our team.</p>
+                <ul>
+                    <li>Email: <a href="mailto:prasunadash2005@gmail.com">prasunadash2005@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+91-6370796484">+91-6370796484</a></li>
+                    <li>Github: <a href="TEAM FIBONAKI">TEAM FIBONAKI</a></li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h3>Send us a message</h3>
+                <form action="#" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
